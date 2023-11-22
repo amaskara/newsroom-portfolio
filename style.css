@@ -1,0 +1,372 @@
+* {
+    margin: 0; padding: 0;
+   
+    
+  
+  }
+
+  a {
+    color: #000000;
+    
+    
+  }
+
+  a.textWhite {
+    color:#FFFFFF;
+    padding: 0%;
+}
+
+
+.down-arrow {
+  position: absolute;
+  top: calc(100vh - 150px);
+  left: calc(50% - 14px);
+  width: 0;
+  height: 30px;
+  border: 2px solid;
+  border-radius: 2px;
+}
+
+.down-arrow:after {
+  content: " ";
+  position: absolute;
+  top: 12px;
+  left: -10px;
+  width: 16px;
+  height: 16px;
+  border-bottom: 4px solid;
+  border-right: 4px solid;
+  border-radius: 4px;
+  transform: rotateZ(45deg);
+}
+
+@keyframes jumpInfinite {
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: 20px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+.down-arrow {
+  animation: jumpInfinite 1.5s infinite;
+}
+
+#header{
+  height: 90vh;
+  width: 60vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+ a{
+  text-decoration: none;
+  font-weight: bold;
+}
+
+ a:hover{
+  text-decoration: underline
+}
+  
+  h2 {
+    padding-left: 7%;
+    padding-right: 7%;
+    line-height: 1;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    font-family: franklin-gothic-urw-comp;
+    font-size: 60px;
+
+  }
+
+
+  h4 {
+    padding-left: 7%;
+    padding-right: 7%;
+    line-height: 1;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    font-family: franklin-gothic-urw-comp;
+    font-size: 30px;
+
+  }
+
+  .title{
+    font-size: 9vw;
+  }
+
+  h2 a {
+      text-decoration: none;
+    }
+
+  h2 a:hover {
+      text-decoration: underline;
+    }
+
+  .sub {
+    text-align: center;
+  }
+    
+  
+ 
+  p{
+    
+  padding-left: 7%;
+  padding-right: 7%;
+  font-size: 20px;
+  font-family: franklin-gothic-urw;
+  }
+
+  .logo{
+    font-family: minion-pro;
+    padding-bottom: 0em;
+    margin-bottom: 0em;
+
+   
+  }
+
+  .text{
+    
+    align-self: center;
+    width: 70%;
+  }
+
+  .textNoPic{
+    
+    align-self: center;
+    margin: auto;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  .textWhite{
+    
+    align-self: center;
+    margin: auto;
+    padding-left: 15%;
+    padding-right: 15%;
+    color:#f4f4f4;
+  }
+
+.author{
+  padding-top:1em;
+ text-align: right;
+}
+
+.footer{
+ margin-bottom: auto;
+    
+}
+
+img.dom {
+  
+    align-self: center;
+    width: 40%;
+    margin-right: 5%;
+    border: 10px solid #000000;
+    
+}
+
+
+img.domLeft {
+  
+  align-self: center;
+  width: 40%;
+  margin-left: 5%;
+  border: 10px solid #000000;
+  
+}
+
+  #hor{
+    
+  
+    width: 100%;
+    display: block;
+    margin: auto;
+
+  }
+
+  #vert{
+    display: none;
+  }
+
+  
+  /* Setting fade transition and default settings */
+body {
+  color: #000;
+  background-color: #f4f4f4;
+  transition: background-color 1.5s ease;
+}
+
+
+/* panel styles */
+.panel {
+  /* min height incase content is higher than window height */
+  min-height: 100vh;
+  display: flex; 
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+
+  
+}
+
+
+/* colours */
+.color-violet {
+  background-color: #7A4EAB;
+}
+.color-indigo {
+  background-color: #4332CF;
+}
+.color-blue {
+  background-color: #2F8FED;
+}
+.color-green {
+  background-color: #98FB98;
+}
+.color-yellow {
+  background-color: #F5BE6A;
+}
+.color-orange {
+  background-color: #F19031;
+}
+.color-red {
+  background-color: #FADADD;
+}
+.color-peach{
+  background-color: #FFE5B4;
+}
+.color-black{
+  background-color: #000000;
+}
+
+.color-fbBlue{
+  background-color: #7d95ca;
+}
+
+.color-mint{
+  background-color:#3eb489;
+}
+
+.color-pink{
+  background-color:#FFC0CB;
+}
+
+.color-white{
+  background-color:#f9f1f1;
+}
+
+.color-paleyellow{
+  background-color:#FFE5B4;
+}
+
+.color-lilac{
+  background-color: #c8a2c8;
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+
+  #header{
+
+    width: 90vw;
+    margin: auto;
+   
+  }
+
+   #vert{
+    width: 100%;
+    display: block;
+    margin: auto;
+
+  }
+
+  #hor{
+    display: none;
+  }
+
+  .panel {
+    /* min height incase content is higher than window height */
+    min-height: 100vh;
+    display: flex; 
+    justify-content: center;
+    flex-direction: column;
+
+    
+    
+    
+     
+    /* turn above on to see the edge of panels */
+  }
+  img.dom {
+    align-self: center;
+    width:80%;
+    
+    margin-right: 0%;
+    
+    margin-bottom: 10%;
+    
+    
+}
+
+img.domLeft {
+  align-self: center;
+  width:80%;
+
+  margin-left: 0%;
+  
+  margin-bottom: 10%;
+  
+  
+}
+
+
+.text{
+    
+  align-self: center;
+  padding-bottom: 10%;
+  order:1;
+  width: 100%;
+  
+}
+
+.textNoPic{
+  
+  align-self: center;
+  margin: auto;
+  padding-bottom: 10%;
+  order:1;
+  width: 100%;
+  padding-left: 0%;
+  padding-right: 0%;
+ 
+}
+
+.textWhite{
+  
+  align-self: center;
+  margin: auto;
+  padding-bottom: 10%;
+  color:#f4f4f4;
+  order:1;
+  width: 100%;
+  padding-left: 0%;
+  padding-right: 0%;
+}
+h2{
+  font-size: 45px;
+}
+
+}
